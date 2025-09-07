@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Lightweight Web FPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui-overlay">
+            <div id="crosshair">+</div>
+            <div id="score-display">Score: 0</div>
+            <div id="health-display">Health: 100</div>
+            <div id="weapon-display">Weapon: Pistol</div>
+        </div>
+        <div id="loading-screen">
+            <p>Loading...</p>
+            <button id="start-game-button">Start Game</button>
+        </div>
+    </div>
+
+<div id="mobile-controls">
+    <div id="movement-pad">
+        <button id="move-forward" class="move-btn">▲</button>
+        <button id="move-left" class="move-btn">◀</button>
+        <button id="move-backward" class="move-btn">▼</button>
+        <button id="move-right" class="move-btn">▶</button>
+    </div>
+
+    <!-- One fire button -->
+    <button id="fire-button">🔥</button>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r132/three.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
